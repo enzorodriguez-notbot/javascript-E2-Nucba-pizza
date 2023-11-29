@@ -47,3 +47,28 @@ const pizzas = [
     ingredientes: ["Muzzarella", "Tomate", "Anana"],
   },
 ];
+//pizzas impares
+const pizzasImpar = pizzas.filter((pizza) => pizza.id % 2 !== 0);
+
+pizzasImpar.forEach((pizza) => {
+  console.log(
+    "Esta pizza tiene un ID impar " + `ID: ${pizza.id}, Nombre: ${pizza.nombre}`
+  );
+});
+
+//pizza con valor menor a 600
+
+const pizzasAffordable = pizzas.filter((pizza) => pizza.precio <= 600);
+
+pizzasAffordable.forEach((pizza) => {
+  console.log(
+    "Esta pizza tiene un precio menor o igual a 600 " +
+      ` Precio: ${pizza.precio}, ID: ${pizza.id}, Nombre: ${pizza.nombre}`
+  );
+});
+
+/////nombre de todas las pizzas con sus precios
+
+const pizzasNameandPrice = pizzas.toString();
+
+const pizzasNameandPrice = pizza.map();
