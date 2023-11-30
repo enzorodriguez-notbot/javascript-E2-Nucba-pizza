@@ -62,13 +62,21 @@ const pizzasAffordable = pizzas.filter((pizza) => pizza.precio <= 600);
 
 pizzasAffordable.forEach((pizza) => {
   console.log(
-    "Esta pizza tiene un precio menor o igual a 600 " +
-      ` Precio: ${pizza.precio}, ID: ${pizza.id}, Nombre: ${pizza.nombre}`
+    "Esta pizza tiene un precio de " +
+      `${pizza.precio}` +
+      " Y se llama " +
+      `${pizza.nombre}`
   );
 });
 
 /////nombre de todas las pizzas con sus precios
 
-const pizzasNameandPrice = pizzas.toString();
+pizzas.forEach((pizza) =>
+  console.log(`Nombre: ${pizza.nombre}, Precio: ${pizza.precio}`)
+);
 
-const pizzasNameandPrice = pizza.map();
+///ingredientes de cada pizza no entendi lo de recorrer dos veces sorry
+
+pizzas.forEach((pizza) =>
+  console.log(`${pizza.nombre},Ingredientes: ${pizza.ingredientes}`)
+);
